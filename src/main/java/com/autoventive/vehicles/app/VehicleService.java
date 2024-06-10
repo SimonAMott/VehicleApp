@@ -24,10 +24,8 @@ public class VehicleService {
         Map<String, Object> parsedJson = mapper.readValue(json, new TypeReference<>() {
         });
 
-        System.out.println(parsedJson);
         vehicleList =  mapper.convertValue(parsedJson.get("vehicles"), new TypeReference<>() {
         });
-        System.out.println(vehicleList);
 
         return vehicleList;
     }
