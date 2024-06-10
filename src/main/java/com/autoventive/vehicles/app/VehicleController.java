@@ -21,8 +21,9 @@ public class VehicleController {
     @PostMapping("/vehicles")
     void newVehicles(@RequestBody String payload) throws IOException {
         List<Vehicle> vehicleList = service.parse(payload);
-        vehicleList = service.discardVW(vehicleList);
-        vehicleList = service.discardBayNumbersGreaterThan100(vehicleList);
+        service.discardVW(vehicleList);
+
+        service.discardBayNumbersGreaterThan100(vehicleList);
         service.createVehicles(vehicleList);
 
     }
