@@ -1,7 +1,7 @@
 package com.autoventive.vehicles;
 
 import com.autoventive.vehicles.app.Vehicle;
-import com.autoventive.vehicles.app.VehicleService;
+import com.autoventive.vehicles.app.VehicleServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ class VehicleControllerTest {
     private MockMvc mockMvc;
 
     @MockBean
-    private VehicleService vehicleService;
+    private VehicleServiceImpl vehicleService;
 
     private String payload;
     private Vehicle vehicle;

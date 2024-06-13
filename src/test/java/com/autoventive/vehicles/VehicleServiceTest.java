@@ -2,7 +2,7 @@ package com.autoventive.vehicles;
 
 import com.autoventive.vehicles.app.Vehicle;
 import com.autoventive.vehicles.app.VehicleRepository;
-import com.autoventive.vehicles.app.VehicleService;
+import com.autoventive.vehicles.app.VehicleServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -26,7 +26,7 @@ public class VehicleServiceTest {
     private VehicleRepository repository;
 
     @InjectMocks
-    private VehicleService service;
+    private VehicleServiceImpl service;
 
     private Vehicle vehicle1, vehicle2, vehicle3, vehicle4;
     private List<Vehicle> vehicles;
