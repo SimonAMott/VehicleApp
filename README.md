@@ -20,9 +20,9 @@ performs some simple validation and writes the resulting Vehicle objects to a da
 
 Running the application and accessing the results:-
     - The only verb available to call the app is 'POST' and running locally the application can be accessed 
-        (via Postmand for example) at localhost:8080/vehicles
+        (via Postman for example) at localhost:8080/vehicles
 
-    - The database can be accessed while the applicatio is running at:-
+    - The database can be accessed while the application is running at:-
         http://localhost:8080/h2-console
     
     -   User name is sa (the h2 default), and no password has been set.
